@@ -1,0 +1,347 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+	
+    <head>
+		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Your Profile </title><!--web page title -->
+        <link href="css/normalize.css" rel="stylesheet">
+       
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        
+        <style>
+            .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+                
+}
+.card {
+  position: relative;
+  width: 30%;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .image {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  background-color: #E6E6E6;
+  color: black;
+  font-size: 8px;
+  padding: 4px 4px;
+}
+                .scrolling-wrapper2 {
+                max-height: 170px;
+                max-width: 1000px;
+                border: 1px solid #e4f7e0;
+               display:flex;
+                   overflow-x: auto;
+}
+            .scrolling-wrapper2::-webkit-scrollbar{
+                width: 0;
+            }
+           
+            
+            .scrolling-wrapper2 .card{
+                min-width: 110px;
+                height: 110px;
+                line-height: 110px;
+                background-color: #e4f7e0;
+                margin-right: 2px;
+                text-align: center;
+            }
+            .scrolling-wrapper {
+                max-height: 120px;
+                max-width: 500px;
+                border: 1px solid #e4f7e0;
+               display:flex;
+                   overflow-x: auto;
+}
+            .scrolling-wrapper::-webkit-scrollbar{
+                width: 0;
+            }
+           
+            
+            .scrolling-wrapper .card{
+                min-width: 110px;
+                height: 100px;
+                line-height: 100px;
+                background-color: #e4f7e0;
+                margin-right: 2px;
+                text-align: center;
+            }
+            .container {
+                display:grid;
+                grid-template-columns:1fr 2fr 1fr;
+                grid-auto-rows:minmax(100px, auto);
+                grid-gap:1em;
+                justify-items:stretch;
+                align-items:stretch;
+            }
+            .container > div{
+               background:#b8ecc9;
+                padding:1em;
+            }
+            .container > div:nth-child(odd){
+                background:#e4f7e0;
+            }
+            .nested {
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+            }
+            .scrolling-wrapper {
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                
+            }
+            .box2{
+                align-self:start;
+            }
+             
+            .box3{
+                align-self:start;
+            }
+            .box8{
+                grid-column:1/3;
+                
+            }
+        </style>
+	</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+    
+    
+    <div class="container">
+        <div class ="box box1"><h1>John Smith</h1>
+   <h3>"Be the change you want to see."</h3>
+           
+   <a href=""><img src="images/profile.jpg" alt="profile-picture" border="0" /></a>
+        <h2>About:</h2>
+            <p><strong>Age:</strong> 31</p>
+            <p><strong>Sex:</strong> Male</p>
+            <p><strong>Location:</strong> San Francisco, CA</p>
+            <p><strong>Rating:</strong> 4.8 Stars</p>
+    </div>
+        <div class ="box box2"> <h1>My Huckster</h1>
+   <h3>About Me</h3>
+   Hi, I'm John Smith, I have a huge passion for web-development and programming. I am very passionate about the environment and want to reduce the amount of fast fashion I am consuming.
+        
+             <h4>My Interests</h4>
+  
+      <div>
+         <ul>
+            <li>Fashion</li>
+            <li>Environmentalism</li>
+            <li>Coding</li>
+         </ul>
+      </div>
+            <h3>My Goals</h3>
+            My goal is to do my bit to save the planet and hopefully convince as many people as possible to do the same. Huckster is a great opportunity to do this as it provides sustainable clothing at an affordable price. There is no excuse.
+        </div>
+        <div class ="box box3">
+            
+            <h2>Comments</h2>
+      <div style="width:300px;height:350px;line-height:1em;overflow:scroll;padding:5px;">
+<h3>J Johnson</h3>
+          <p>Love your profile John, I like a few of the items on your wishlist so you best buy them soon.</p>
+          <h3>Riley Clark</h3>
+          <p>I'm also extremely passionate about the environment and I love coding! Let me know if you'd like to collaborate soon.</p>
+          <h3>M Connor</h3>
+          <p>I love your profile John, and I have bought some nice items off of you recently! I found a pair of trousers you might like, they are the blue ones on my wishlist. I'm also selling some things you might like so feel free to check them out. Hope you are doing well, it's been a lovely week here in Brighton.</p>
+</div>
+        
+    </div>
+        <div class ="box box4">
+   <h2>Socials</h2>
+                <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-reddit"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+        </div>
+
+      
+        
+    
+      
+            <div class ="box box5">
+                
+                
+                <h2>Recently Liked:</h2>
+                
+                
+    <div class="scrolling-wrapper">
+<div class="card"><a href=""><img src="images/bb1.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Purple dress</div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/bb2.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Pattern trousers </div>
+  </div> 
+</div>
+  <div class="card"><a href=""><img src="images/bb3.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">White dress </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/bb4.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Purple shirt </div>
+  </div> 
+</div>
+  <div class="card"><a href=""><img src="images/bb5.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Navy jumper </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/bb6.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">White shirt </div>
+  </div> 
+</div><div class="card"><a href=""><img src="images/bb7.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Blue shirt </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/bb8.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Gray shirt </div>
+  </div> 
+</div>
+        </div>
+                
+        </div>
+            <div class ="box box6">
+        <form action="/html/codes/html-comment-box-code-action.cfm" method="get">
+Leave a comment!:<br />
+        
+<textarea rows="6" cols="35"></textarea><br />
+<input type="submit" value="Submit" />
+</form>
+<p style="font-size:10px;"><a style="color:gray;"></a>
+    </div>
+           
+        <div class ="box box8">
+            <h2>Wishlist:</h2>
+            <div class="scrolling-wrapper2">
+      <div class="card"><a href=""><img src="images/a1.jpg" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Brown coat</div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/aa1.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Yellow dress </div>
+  </div> 
+</div>
+  <div class="card"><a href=""><img src="images/aa2.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">White skirt </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/aa3.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">White shirt </div>
+  </div> 
+</div>
+  <div class="card"><a href=""><img src="images/aa5.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Red dress </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/aa6.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Pattern dress </div>
+  </div> 
+</div><div class="card"><a href=""><img src="images/aa7.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Blue shirt </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/aa8.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Gray jacket </div>
+  </div> 
+</div><div class="card"><a href=""><img src="images/aa9.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Denim jacket </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/aa10.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Grey tshirt </div>
+  </div> 
+</div><div class="card"><a href=""><img src="images/aa11.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Sun dress </div>
+  </div> 
+</div>
+                
+  <div class="card"><a href=""><img src="images/aa12.jfif" alt="profile-picture" border="0" class="image" style="width:100%"></a>
+      <div class="middle">
+      <div class="text">Orange skirt </div>
+  </div> 
+</div>
+                
+
+</div>
+        </div>
+            <div class ="box box9">
+                            <h2>Rate my Profile!</h2>
+<div class="stars">
+  <form action="">
+    <input class="star star-5" id="star-5" type="radio" name="star"/>
+    <label class="star star-5" for="star-5"></label>
+    <input class="star star-4" id="star-4" type="radio" name="star"/>
+    <label class="star star-4" for="star-4"></label>
+    <input class="star star-3" id="star-3" type="radio" name="star"/>
+    <label class="star star-3" for="star-3"></label>
+    <input class="star star-2" id="star-2" type="radio" name="star"/>
+    <label class="star star-2" for="star-2"></label>
+    <input class="star star-1" id="star-1" type="radio" name="star"/>
+    <label class="star star-1" for="star-1"></label>
+  </form>
+</div>
+        </div>
+       
+    
+    </div>
+
+  
+
+    
+    </body>
