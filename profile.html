@@ -7,10 +7,21 @@
 		<title>Your Profile </title><!--web page title -->
         <link href="css/normalize.css" rel="stylesheet">
        
-        <link href="css/stylesheet.css" rel="stylesheet">
+        <link href="css/profilestylesheet.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
-        
+    
+
+    <div class="topnav">
+  <a href="#index.html">
+  <img src="images/huckster1.png">
+</a>
+  <a href="#add_item.html">Sell</a>
+  <a href="#recycleprogram.html">Recycle</a>
+  <a class="active" href="#profile.html">My Huckster</a>
+  <a href="#contact.html">Contact Us</a>
+</div>
+    
         <style>
             .image {
   opacity: 1;
@@ -56,11 +67,11 @@
                 max-width: 1000px;
                 border: 1px solid #e4f7e0;
                display:flex;
-                   overflow-x: auto;
+                   overflow-x:scroll;
+                    overflow-y:hidden;
+                    
 }
-            .scrolling-wrapper2::-webkit-scrollbar{
-                width: 0;
-            }
+            
            
             
             .scrolling-wrapper2 .card{
@@ -76,11 +87,10 @@
                 max-width: 500px;
                 border: 1px solid #e4f7e0;
                display:flex;
-                   overflow-x: auto;
+                   overflow-x:scroll;
+                    overflow-y:hidden;
 }
-            .scrolling-wrapper::-webkit-scrollbar{
-                width: 0;
-            }
+            
            
             
             .scrolling-wrapper .card{
@@ -163,7 +173,7 @@
         <div class ="box box3">
             
             <h2>Comments</h2>
-      <div style="width:300px;height:350px;line-height:1em;overflow:scroll;padding:5px;">
+      <div style="width:300px;height:350px;line-height:1em;overflow-y: scroll;overflow-x:hidden;padding:5px;">
 <h3>J Johnson</h3>
           <p>Love your profile John, I like a few of the items on your wishlist so you best buy them soon.</p>
           <h3>Riley Clark</h3>
