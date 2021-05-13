@@ -1,0 +1,137 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+	
+    <head>
+		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Recycle Program </title><!--web page title -->
+        <link href="css/normalize.css" rel="stylesheet">
+       
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        
+        
+
+        
+        <style>
+        
+        .container-1{
+            display:flex;
+            
+            flex-direction:row;
+            grid-gap:1em;
+        }
+        
+        .container-1{
+            border:1px #ccc solid;
+            padding:10px;
+        }
+        
+        .Grid-1{
+            flex:2;
+            order:1;
+            background-color:lightgreen;
+            line-height: 200%;
+        }
+        
+        .Grid-2{
+            flex:2;
+            order:2;
+            background-color:green;
+            line-height: 200%;
+        }
+        
+        .Grid-3{
+            flex:2;
+            order:3;
+            background-color:lightgreen;
+            line-height: 200%;
+        }
+        
+        
+        
+            
+            .page{
+                width: 600px;
+            }
+            
+        </style>
+        
+        <body>
+            
+            <div class="topnav">
+  <a href="index.html">
+  <img src="images/huckster1.png">
+</a>
+  <a href="add_item.html">Sell</a>
+  <a href="recycleprogram.html">Recycle</a>
+  <a class="active" href="profile.html">My Huckster</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+            
+            <div class = "container-1">
+                
+                <div class="Grid-1">
+                
+                <h2>Recycle Items</h2>
+                
+                
+                <label> How many Items are you recycling? </label>
+                
+                <br>
+                
+                <input type="number" min="1" name="Number of" id="NR" placeholder="Enter number here" />
+                
+                <br>
+                
+                <label> How much does your items weigh? </label>
+                
+                <br>
+                
+                <input type="number" min="0.01" name="Number of" id="NR" placeholder="KG" />
+                
+                <br>
+                
+                <label> What is your reason for recycling with us? </label>
+                <select name="Why?" id="Why">
+                      <option value="Sell Items">Sell Items</option>
+                      <option value="Enviroment">Enviroment</option>
+                      <option value="Clothes have no use">Clothes have no use</option>
+                      <option value="Other">Other</option>
+                </select>
+                
+                <br>
+                
+                <input type="text" minlength="1" maxlength="60" name="Other" id="OT" placeholder="(If other) please enter here" />
+                
+                </div>
+                
+                <div class="Grid-2">
+                
+                <h2>Photo of product(s)</h2>
+                
+                <Label> Click below to uplaod photos </Label>
+                
+                <image> placeholder </image>
+                
+                </div>
+                
+                                <div class="Grid-3">
+                
+                <h2>Scan Item(s) </h2>
+                
+                <Label> Click below to scan item(s) </Label>
+                
+                <image> placeholder </image>
+                
+                <input type="text" minlength="1" maxlength="13" name="Barcdoe" id="BC" placeholder="Manually enter barcode" />
+                
+                
+                <input type="submit">
+                
+                </div>
+       
+            </div>
+            
+        </body>
