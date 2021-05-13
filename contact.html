@@ -1,25 +1,61 @@
-<div class="container">
-  
-  <link href="css/normalize.css" rel="stylesheet">
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+	
+       <link href="css/normalize.css" rel="stylesheet">
        
         <link href="css/stylesheet.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <form action="action_page.php">
+		
+	</head>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+<!--Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<!--The 'wrapper' contains all the page content-->
+
     
-    <label for="email">Email</label>
-    <input type="text" id="email" name="emailaddress" placeholder="Your email..">
+    <header><!--The main heading for the page -->
+		<h1>Contact Us!!</h1>
+	
+	</header>
+	
+    
+    <form id="form1">
+        
+        <fieldset>
+<legend>Your contact details</legend>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<label for="name">Name <em>(required)</em></label>
+<input type="text" id="name" />
 
-    <input type="submit" value="Submit">
+<label for="email">Email address <em>(required)</em></label>
+<input type="text"  id="email" />
 
-  </form>
-</div>
+<label for="url">Website address</label>
+<input type="text" id="url" value="http://" />
+
+</fieldset>
+</form>
+
+
+<fieldset>
+  <label for="message">Please leave any extra thoughts below: </label>
+  <textarea id="message" required></textarea>
+  <input type="submit" value="Click to send" />
+  </fieldset>
+  
+  
+  
+  <fieldset>
+<legend>Would you like more information?</legend>
+<label for="information-yes">
+  <input type="radio" id="information-yes" 
+  name="information" value="yes" />Yes please</label>
+<label for="information-no">
+  <input type="radio" id="information-no" 
+  name="information" value="no" checked />No thanks</label>
+  <input type="submit" value="Click to submit" />
+  
+  </fieldset>
+
