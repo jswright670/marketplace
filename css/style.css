@@ -309,7 +309,7 @@ button {
 }
 
 a.readmore_bt {
-     color: #fff;
+     color: #000;
      font-weight: 300;
      text-decoration: underline !important;
 }
@@ -380,7 +380,7 @@ a.readmore_bt {
      bottom: 20px;
      z-index: 99;
      text-align: center;
-     color: #fff;
+     color: #000;
      cursor: pointer;
      border-radius: 0px;
      opacity: 0;
@@ -559,7 +559,7 @@ ul.top_icon li a {
 }
 
 .top-menu-left li a {
-color: #ebf0ec;
+color: #000;
      font-size: 12px;
      text-transform: uppercase;
      text-decoration: none;
@@ -618,7 +618,7 @@ color: #ebf0ec;
 
 .slogan-line {
      float: right;
-     color: #ffffff;
+     color: #000;
      font-size: 13px;
 }
 
@@ -690,7 +690,7 @@ color: #ebf0ec;
      font-size: 16px;
      display: block;
      font-weight: 500;
-     color: #ffffff;
+     color: #000;
      padding: 22px 20px;
      text-transform: uppercase;
 }
@@ -972,10 +972,10 @@ color: #ebf0ec;
      font-size: 65px;
      line-height: 74px;
      font-weight: bold;
-     color: #081b30;
+     color: #000;
 }
 .banner-main .carousel-caption p {
-     color: #ffffff;
+     color: #000;
      padding: 9px 0px;
      margin-bottom: 50px;
 }
@@ -1573,7 +1573,7 @@ line-height: 18px;
      width: 100%; 
      float: left; 
 
-     color: #fffcf4;
+     color: #000;
      margin-top: 80px;
      font-size: 30px;
 
@@ -1585,7 +1585,7 @@ line-height: 30px;
      width: 100%;
      float: left; 
      font-size: 16px; 
-     color: #fffcf4;
+     color: #000;
      margin: 0px; 
 }
 
@@ -1640,12 +1640,12 @@ line-height: 30px;
 }
 
 .lorem_ipsum_text{
-     color: #fff;
+     color: #000;
      text-align: center;
      width: 83%;
      margin: 0 auto;
      position: relative;
-     color: #fffcf4;
+     color: #000;
      padding-top: 33px!important;
 
 }
@@ -1825,7 +1825,7 @@ line-height: 30px;
 
 .site_info {
     display: flex;
-    color: #fff;
+    color: #000;
     padding-bottom: 10px;
 }
 
